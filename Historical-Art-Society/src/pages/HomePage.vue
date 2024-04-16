@@ -1,4 +1,21 @@
-<script setup></script>
+<script setup>
+import { computed, onMounted } from 'vue';
+import { AppState } from '../AppState.js';
+import { artService } from '../services/ArtService.js';
+import Pop from '../utils/Pop.js';
+
+async function getArt(){
+  try {
+    await artService.getArt()
+  } catch (error) {
+    Pop.toast('Unable to load our collection', 'error')
+    console.error(error)
+  }
+}
+
+const arts = computed(()=> AppState.arts)
+onMounted(this.getArt)
+</script>
 
 <template>
   <div class="home flex-grow-1 d-flex flex-column align-items-center justify-content-center">
@@ -13,23 +30,6 @@
 </template>
 
 <style scoped lang="scss">
-.home {
-  display: grid;
-  height: 80vh;
-  place-content: center;
-  text-align: center;
-  user-select: none;
 
-  .home-card {
-    width: clamp(500px, 50vw, 100%);
 
-    >img {
-      height: 200px;
-      max-width: 200px;
-      width: 100%;
-      object-fit: contain;
-      object-position: center;
-    }
-  }
-}
 </style>

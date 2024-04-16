@@ -1,17 +1,7 @@
 <script setup>
 import { AppState } from './AppState'
 import Navbar from './components/Navbar.vue'
-import { artService } from './services/ArtService.js';
-import Pop from './utils/Pop.js';
 
-async function getArt(){
-  try {
-    await artService.getArt()
-  } catch (error) {
-    Pop.toast('Unable to load our collection', 'error')
-    console.error(error)
-  }
-}
 </script>
 
 <template>
