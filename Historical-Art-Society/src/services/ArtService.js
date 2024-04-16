@@ -1,16 +1,10 @@
-import axios from "axios"
-
-import { baseURL } from "../env.js"
-
-const ArtAPI = axios.create({
-    baseURL
-
-})
+import { api } from "./AxiosService.js"
 
 class ArtService {
 
     async getArt() {
-
+        let artworks = await api.get('api/artworks')
+        console.log('fetched, yo', artworks)
     }
 }
 

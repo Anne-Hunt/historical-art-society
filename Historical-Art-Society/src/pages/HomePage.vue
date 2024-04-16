@@ -14,7 +14,10 @@ async function getArt(){
 }
 
 const arts = computed(()=> AppState.arts)
-onMounted(this.getArt)
+
+onMounted(()=>{
+ getArt()
+})
 </script>
 
 <template>
