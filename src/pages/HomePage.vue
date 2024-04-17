@@ -50,8 +50,7 @@ onMounted(()=>{
     <div class="class col-10">
       <div class="row">
       <div v-for="artwork in artworks" :key="artwork.id" class="col-3">
-            <img :src="artwork.small" class="img-fluid" :alt="artwork.slug">
-            <p>{{ artwork.attribution }}</p>
+            <img :src="artwork.small" class="rounded shadow img-fluid" :alt="artwork.slug">
           </div>
     </div>
       <!-- <ArtCard v-for="art in artworks" :key="art.id" :art="art" /> -->
