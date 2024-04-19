@@ -9,9 +9,10 @@ export const AppState = reactive({
   account: null,
 
   /** @type { Art[]} */
-  arts: [],
+  artworks: [],
 
   currentPage: null,
   totalPages: null,
-  activeArt: null
+  activeArt: null,
+  searchString: null
 })

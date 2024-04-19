@@ -20,7 +20,7 @@ export class Art {
 // height	4334
 // width	5659
 // originalLink	"https://unsplash.com/photos/a-painting-of-a-landscape-with-a-mountain-in-the-background-vjrzHCu0ONk"
-// imgUrls	
+// imgUrls
 // raw	"https://images.unsplash.com/photo-1689259103820-a375e5a30e00?ixid=M3wzMTA1MjZ8MHwxfGNvbGxlY3Rpb258NDIxfGtXRDJkTUN3dnkwfHx8fHwyfHwxNzEzMjkxODAyfA&ixlib=rb-4.0.3"
 // full	"https://images.unsplash.com/photo-1689259103820-a375e5a30e00?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMTA1MjZ8MHwxfGNvbGxlY3Rpb258NDIxfGtXRDJkTUN3dnkwfHx8fHwyfHwxNzEzMjkxODAyfA&ixlib=rb-4.0.3&q=85"
 // regular	"https://images.unsplash.com/photo-1689259103820-a375e5a30e00?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzMTA1MjZ8MHwxfGNvbGxlY3Rpb258NDIxfGtXRDJkTUN3dnkwfHx8fHwyfHwxNzEzMjkxODAyfA&ixlib=rb-4.0.3&q=80&w=1080"

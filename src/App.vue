@@ -1,5 +1,5 @@
 <script setup>
-import { AppState } from './AppState'
+// import { AppState } from './AppState'
 // import Navbar from './components/Navbar.vue'
 
 
@@ -7,7 +7,6 @@ import { AppState } from './AppState'
 
 <template>
   <header>
-    <!-- <Navbar/> -->
   </header>
   <main>
     <router-view />
